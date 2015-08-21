@@ -11,5 +11,5 @@ modules:
         - \Helper\Acceptance
     config:
         WebDriver:
-            url: http://www.englishdom.com
-            browser: 'phantomjs'
+            url: http://www.englishdom.com/
+            browser: phantomjs
