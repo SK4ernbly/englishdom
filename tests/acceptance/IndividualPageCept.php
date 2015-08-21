@@ -7,7 +7,13 @@ $I->see(IndividualAppData::$headerText);
 
 //попытка отправить форму с незаполненными обязательными полями.
 $I->click(IndividualAppData::$submitBtn);
-$I->wait(1);    //для phantomjs пришлось поставить эти паузы, т.к. текст не успевает появляться и тест падает. Для Chrome или FF эти паузы можно убрать
+
+/*
+пришлось поставить паузы wait(1), т.к. оказывается для phantomjs текст не успевает появитсья и тест падает.
+Для Chrome или FF эти паузы можно убрать.  
+*/
+$I->wait(1);
+
 $I->see(IndividualAppData::$validationNameText);
 $I->see(IndividualAppData::$validationEmailText);
 $I->see(IndividualAppData::$validationPhoneText);
