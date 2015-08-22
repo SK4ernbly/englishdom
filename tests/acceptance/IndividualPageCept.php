@@ -9,7 +9,7 @@ $I->see(IndividualAppData::$headerText);
 $I->click(IndividualAppData::$submitBtn);
 
 /*
-пришлось поставить паузы wait(1), т.к. оказывается для phantomjs текст не успевает появитсья и тест падает.
+пришлось поставить паузы wait(1), т.к. оказывается для phantomjs текст не успевает появится и тест падает.
 Для Chrome или FF эти паузы можно убрать.  
 */
 $I->wait(1);
